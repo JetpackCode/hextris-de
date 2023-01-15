@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
 	<head>
+		<meta charset="UTF-8">
 		<title>Hextris</title>
 		<meta name="description" content="An addictive puzzle game inspired by Tetris.">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui"/>
@@ -14,6 +15,7 @@
 		<script type='text/javascript' src="vendor/keypress.min.js"></script>
 		<script type='text/javascript' src="vendor/jquery.js"></script>
 		<script type='text/javascript' src="vendor/sweet-alert.min.js"></script>
+		<script type='text/javascript' src='js/translate.js'></script>
 		<script type='text/javascript' src="js/save-state.js"></script>
 		<script type='text/javascript' src="js/view.js"></script>
 		<script type='text/javascript' src="js/wavegen.js"></script>
@@ -58,5 +60,11 @@
 				<div id='buttonCont'></div>
 			</div>
 		</div>
+		<script>
+			$('#HIGHSCORE').html(insert('high_score'));
+			$('#highScoreInGameTextHeader').html(insert('high_score'));
+			$('#gameOverBox').html(insert('game_over'));
+			$('#highScoresTitle').html(insert('high_scores'));
+		</script>
 	</body>
 </html>
